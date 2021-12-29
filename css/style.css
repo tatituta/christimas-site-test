@@ -1,0 +1,264 @@
+/* sawyisi */
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* saerto */
+
+.row,
+.content .wrapper,
+#section,
+#section .img-box-1,
+#section .size,
+.de-main .animation-field
+{
+  display: flex;
+}
+#marry-cristmas header,
+#marry-cristmas .content,
+.content .wrapper,
+#section .wrapper,
+#section,
+#section .img-box-1,
+#section .size
+{
+  justify-content: center;
+}
+
+.content .wrapper,
+#section .size
+{
+  justify-content: space-between;
+}
+
+#section .img-box-1
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* kerdzo */
+#marry-cristmas
+{
+  padding: 30px 0;
+  background-image:url(../images/snowfall-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  z-index: 0;
+}
+
+.de-main img
+{
+  width: 200px;
+}
+#marry-cristmas .title
+{
+  width: 500px;
+}
+#marry-cristmas header
+{
+  text-align: center;
+}
+#marry-cristmas header h1
+{
+  font-size: 50px;
+  margin-bottom: 10px;
+  color:rgb(131,137,150);
+
+}
+#marry-cristmas header p
+{
+  line-height: 20px;
+  color: gray;
+}
+#marry-cristmas header
+{
+  margin-bottom: 50px;
+}
+/* content */
+
+.content .wrapper
+{
+
+  width: 95%;
+  margin-bottom: 140px;
+}
+.content .box-1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .box-1
+{
+  width: 31%;
+}
+.content .box-1 img
+{
+  min-height: 200px;
+}
+/* .content .red
+{
+  background-color: red;
+}
+.content .blue
+{
+  background-color: blue;
+}
+.content .yellow
+{
+  background-color: yellow;
+} */
+.content img
+{
+  width: 100%;
+  height: 300px;
+}
+
+/* section */
+
+#section .wrapper
+{
+  /* background-color: tomato; */
+  width: 95%;
+}
+#section .img-box-1
+{
+  /* background-color: red; */
+  width: 48%;
+}
+
+
+#section .size
+{
+  width: 60%;
+  /* background-color: violet; */
+}
+#section img
+{
+  width: 100%;
+  height: 300px;
+}
+
+
+/* img efect */
+
+ .box-1
+{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url(../images/cat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.box-1:hover .overlay{
+  bottom: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.img-box-1 {
+  position: relative;
+}
+.img-box-1:hover .overlay
+{
+  bottom: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* animation */
+
+.sleigh
+{
+  background-image: url(../image-sleigh/pngaaa.com-2694675.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left:0;
+  top: 0;
+  z-index: 1;
+  transition: 0.5s all ease-in;
+  animation-iteration-count: infinite;
+  animation-name: sleigh;
+  animation-duration: 6s;
+  cursor: pointer;
+}
+
+
+@keyframes sleigh
+{
+  0%
+  {
+    left: 5%;
+    top: 10%;
+    background-image: url(../image-sleigh/pngaaa.com-2694675.png);
+    transform: rotate(10deg);
+  }
+  25%
+  {
+    left: 20%;
+    top: 25%;
+    transform: rotate(15deg);
+    background-image: url(../image-sleigh/pngaaa.com-2694675.png);
+  }
+  50%
+  {
+    left: 40%;
+    top: 35%;
+    background-image: url(../image-sleigh/pngaaa.com-2694675.png);
+    transform: rotate(30deg);
+  }
+  70%
+  {
+    left: 60%;
+    top: 40%;
+    background-image: url(../image-sleigh/pngaaa.com-2694675.png);
+  }
+  85%
+  {
+    left: 80%;
+    top: 50%;
+   
+    background-image: url(../image-sleigh/2.png);
+  }
+  100%
+  {
+    left: 5%;
+    top: 80%;
+    transform: rotate(-30deg);
+    background-image: url(../image-sleigh/2.png);
+  }
+}
+
+
